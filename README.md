@@ -21,16 +21,16 @@ Hosting Nestjs App with Github actions and EC2
 - go to settings
 - click on actions and then runner
 - follow the instruction to install github actions on on EC2
-  sudo apt update
-  sudo apt install nodejs npm nginx
-  sudo npm install -g pm2
-  sudo ./svc.sh install
-  sudo ./svc.sh start
-  cd \_work # move to that directory
-  sudo pm2 start dist/main.js --name=<app-name>
-  sudo pm2 restart <app-name>
-  cd etc/nginx/sites-available
-  sudo nano default
+- sudo apt update
+- sudo apt install nodejs npm nginx
+- sudo npm install -g pm2
+- sudo ./svc.sh install
+- sudo ./svc.sh start
+- cd \_work # move to that directory
+- sudo pm2 start dist/main.js --name=<app-name>
+- sudo pm2 restart <app-name>
+- cd etc/nginx/sites-available
+- sudo nano default
 
 # Add the piece of code below
 
